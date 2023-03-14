@@ -1,5 +1,6 @@
 html{
   scroll-behavior: smooth;
+  width: 100vw;
 }
 a:link {
   text-decoration: none;
