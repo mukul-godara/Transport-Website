@@ -1,0 +1,220 @@
+html{
+  scroll-behavior: smooth;
+}
+a:link {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+a:visited {
+  color:white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: aqua;
+  text-decoration: none;
+}
+
+a:active {
+  color: bisque;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: roboto,sans-serif;
+  font-size: 18px;
+  line-height: 33px;
+}
+.top {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  z-index: 100;
+}
+.name {
+  display: inline-block;
+  padding-left: 10px;
+}
+.list a:active {
+  color: aquamarine;
+}
+.list {
+  position: absolute;
+  right: 30px;
+  display: inline;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.list li {
+  display: inline-block;
+  padding: 10px;
+}
+.list .icon{
+  display: none;
+}
+.list li:hover {
+  cursor: pointer;
+  color: aquamarine;
+}
+.image {
+  margin-top: 75px;
+  width: 100%;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.useful {
+  font-family: Verdana, Geneva, sans-serif;
+  height: 40vh;
+  width: 100%;
+  color: azure;
+  background-color: rgb(29, 29, 29);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.useful div {
+  width: 33.3%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.useful div:hover {
+  background-color: aqua;
+}
+.head {
+  font-family: montserrat, sans-serif;
+  padding-top: 10vh;
+}
+.text span {
+  font-size: 40px;
+}
+.text p {
+  font-size: 15px;
+}
+.feature {
+  display: flex;
+  width: auto;
+  gap: 2vw;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.feature div {
+  padding: 10px;
+  height: 100%;
+}
+figcaption {
+  position: relative;
+  bottom: 130px;
+  font-size: x-large;
+  left: 70px;
+  right: 0;
+  color: aliceblue;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.medium {
+  background-image: url(https://livedemo00-joomla.template-help.com/joomla_57778/images/parallax/parallax1.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding-top: 20vh;
+}
+.alligner {
+  display: flex;
+  flex-direction: column;
+  gap:10vh ;
+  align-items: center;
+  width: auto;
+  padding-bottom: 10vh;
+}
+.answers {
+  display: flex;
+  gap:3vw;
+  align-items: center;
+  justify-content: center;
+  width:75vw;
+}
+.reason{
+    font-size:xx-large;
+}
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10vh;
+  margin-bottom: 15vh;
+}
+.about p{
+  width:50vw;
+}
+.contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:70vh;
+  background-color: black;
+  color: white;
+}
+.content{
+  width:70vw;
+
+}
+@media only screen and (max-width: 700px) {
+  .useful{
+    flex-direction: column;
+    width: 100%;
+    height: 120vh;
+  }
+  .useful div{
+    width: 100%;
+    height:40vh;
+  }
+  .reason{
+    text-align: center;
+  }
+  .answers{
+    flex-direction: column;
+    height:auto;
+  }
+  .answer div{
+    height:20vh;
+  }
+}
+@media only screen and (max-width: 900px){
+  .list .nav{
+    display:none;
+  } 
+  .list .icon{
+    display:block;
+  }
+}
+.responsive .nav{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  color: aquamarine;
+
+}
+.responsive .icon{
+  display: block;
+  position: absolute;
+  top: 14px;
+  right:20px;
+}
